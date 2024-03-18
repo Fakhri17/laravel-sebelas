@@ -23,4 +23,9 @@ class CategoriesSeeder extends Seeder
             ]);
         }
     }
+
+    public function down(): void
+    {
+        DB::table('categories')->truncate();
+    }
 }
